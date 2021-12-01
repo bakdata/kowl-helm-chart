@@ -1,0 +1,6 @@
+# check https://github.com/helm/chart-testing/blob/main/pkg/config/test_config.yaml for possible configurations
+target-branch: "master"
+validate-maintainers: false
+check-version-increment: false
+chart-dirs:
+  - .
