@@ -133,6 +133,9 @@ secret:
     kafka-tls-passphrase: "kafka-tls-passphrase"
     kafka-sasl-password: "kafka-sasl-password"
 
+  extraSecretData: []
+    # foo: "bar"
+
   # Secret values in case you want the chart to create a secret
   # Kafka secrets
   kafka: {}
