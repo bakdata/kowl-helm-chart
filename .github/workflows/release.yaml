@@ -29,4 +29,3 @@ jobs:
           githubUsername: "${{ secrets.GH_USERNAME }}"
           githubEmail: "${{ secrets.GH_EMAIL }}"
           releaseType: "${{ github.event.inputs.releaseType }}"
-          chartDirectory: "."
