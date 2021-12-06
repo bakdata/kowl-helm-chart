@@ -3,12 +3,12 @@ entries:
   kowl:
   - apiVersion: v2
     appVersion: v1.5.0
-    created: "2021-12-06T17:57:35.708331008+01:00"
+    created: "2021-12-06T18:28:02.277819123+01:00"
     description: A Helm chart for Kowl & Kowl Business
-    digest: 1f8924f24a6c4381eec4cb85e50f2c2ea202035354857110bc2804f343233326
+    digest: 9d5b493ef8ffc6c25c7c980b0b9b7c87f9ace331cdff07b64a41680b9adf65af
     name: kowl
     type: application
     urls:
     - kowl/kowl-2.1.0.tgz
     version: 2.1.0
-generated: "2021-12-06T17:57:35.706195755+01:00"
+generated: "2021-12-06T18:28:02.276872062+01:00"

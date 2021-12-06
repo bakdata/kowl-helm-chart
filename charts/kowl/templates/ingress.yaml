@@ -34,7 +34,7 @@ spec:
           - path: {{ .path }}
             backend:
               serviceName: {{ .svcName | default $fullName }}
-              servicePort: {{ .svcPort | $svcPort }}
+              servicePort: {{ .svcPort | default $svcPort }}
           {{- end }}
     {{- end }}
 {{- end }}
