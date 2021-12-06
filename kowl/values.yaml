@@ -55,7 +55,6 @@ ingress:
     - host: chart-example.local
       paths:
         - path: /
-          pathType: ImplementationSpecific
           # svcName:
           # svcPort:
 
