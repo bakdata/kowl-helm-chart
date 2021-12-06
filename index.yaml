@@ -3,9 +3,9 @@ entries:
   kowl:
   - apiVersion: v2
     appVersion: v1.5.0
-    created: "2021-12-06T12:29:00.696217763+01:00"
+    created: "2021-12-06T12:34:04.869674346+01:00"
     description: A Helm chart for Kowl & Kowl Business
-    digest: dca65295273ad595409bfb960a78db797786c892c98528c01c5e1f74064bbdd3
+    digest: 12c77fab216b311c7f88a3d83375483f025747e06edc888e166eda8c8cc18f49
     name: kowl
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: v1.5.0
-    created: "2021-12-06T12:29:00.695021055+01:00"
+    created: "2021-12-06T12:34:04.868709355+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: 770b452b4a6db30d8a319ffc54b264f293fdee0a1dfa20ac4f1b50f994493fac
     name: kowl
@@ -23,7 +23,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2021-12-06T12:29:00.6937709+01:00"
+    created: "2021-12-06T12:34:04.867761606+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: 4e71342b646819280f28a68dd76f05cfeb48d7ff6f4d1b2371dfa28edb83cdff
     name: kowl
@@ -33,7 +33,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2021-12-06T12:29:00.692501897+01:00"
+    created: "2021-12-06T12:34:04.866870802+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: d19d58edb87fc0863f7c4b8642eefb0f2b3d6dc08c9d4da3bbf1ad1183f5db96
     name: kowl
@@ -43,7 +43,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2021-12-06T12:29:00.69114661+01:00"
+    created: "2021-12-06T12:34:04.865967121+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: f9fac6b7df69873256670dd6a2999a5999858b8f924bc564a0e2aa456035f3ff
     name: kowl
@@ -53,7 +53,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: v1.1.0
-    created: "2021-12-06T12:29:00.689865149+01:00"
+    created: "2021-12-06T12:34:04.865120959+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: c372eaa6a9a25da5e5b2acdbfdc4c98bf4ded582765c566ff813b9b9be2a65d3
     name: kowl
@@ -63,7 +63,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2021-12-06T12:29:00.688787023+01:00"
+    created: "2021-12-06T12:34:04.864272667+01:00"
     description: A Helm chart for Kowl & Kowl Business
     digest: eb630aef87e47b7fc1285de4ef50d76dcb506fd18ec546dfff69edfe4d5c1cab
     name: kowl
@@ -71,4 +71,4 @@ entries:
     urls:
     - archives/kowl-1.0.1.tgz
     version: 1.0.1
-generated: "2021-12-06T12:29:00.687292407+01:00"
+generated: "2021-12-06T12:34:04.863138833+01:00"
