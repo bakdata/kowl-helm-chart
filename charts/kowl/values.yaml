@@ -56,7 +56,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-          
+
           # if you set a svcPort and a svcPortName then only the svcPortName is used
           # svcName: foo
           # svcPort: 80
