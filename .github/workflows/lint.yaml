@@ -1,0 +1,19 @@
+name: lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/checkout@v2
+        with:
+          repository: "bakdata/ci-templates"
+          path: "ci-templates"
+
+      - name: Lint helm charts
+        uses: ./ci-templates/helm-lint

@@ -1,31 +1,31 @@
-name: Release Charts
+name: release
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'kowl/Chart.yaml'
+  workflow_dispatch:
+    inputs:
+      releaseType:
+        description: "The type of the release."
+        default: "patch"
+        required: false
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-
-      - name: Helm Package
-        run: |
-          helm package ./kowl -d ./archives
-
-      - name: Helm Index
-        run: |
-          helm repo index ./archives --merge .archives/index.yaml
-
-      - name: Commit and push
-        run: |
-          git config user.name "GitHub Action ($GITHUB_ACTOR)"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git add --all
-          git commit -m  '[Auto Commit] New helm chart / helm repo index.yaml'
-          git push
-
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      
+      - uses: actions/checkout@v2
+        with:
+          repository: "bakdata/ci-templates"
+          path: "ci-templates"
+      
+      - name: Release charts
+        uses: ./ci-templates/helm-release
+        with:
+          githubToken: "${{ secrets.GH_TOKEN }}"
+          githubUsername: "${{ secrets.GH_USERNAME }}"
+          githubEmail: "${{ secrets.GH_EMAIL }}"
+          releaseType: "${{ github.event.inputs.releaseType }}"
