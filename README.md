@@ -5,9 +5,9 @@ This repository contains helm charts for all CloudHut products. As of now there'
 ## Installing the helm chart
 
 ```
-helm repo add cloudhut https://raw.githubusercontent.com/cloudhut/charts/master/archives
+helm repo add kowl-helm-chart https://bakdata.github.io/kowl-helm-chart/
 helm repo update
-helm install -f values.yaml kowl cloudhut/kowl
+helm install kowl kowl-helm-chart/kowl
 ```
 
 ## Chart configuration
