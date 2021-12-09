@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  kowl:
+  - apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-12-09T11:30:16.466388422Z"
+    description: A Helm chart for Kowl & Kowl Business
+    digest: 999c10b7bb92eb56e73d3b3ce24fe1477b55a6fdf26c467e51e0e8a48ae4ea02
+    name: kowl
+    type: application
+    urls:
+    - https://github.com/bakdata/kowl-helm-chart/releases/download/kowl-2.1.1/kowl-2.1.1.tgz
+    version: 2.1.1
+generated: "2021-12-09T11:30:16.466400322Z"
