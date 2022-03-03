@@ -1,31 +1,19 @@
-name: release
+name: helm-release
 
 on:
   workflow_dispatch:
     inputs:
-      releaseType:
-        description: "The type of the release."
+      release-type:
+        description: "The scope of the release (major, minor or patch)."
         default: "patch"
         required: false
 
 jobs:
-  release:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      
-      - uses: actions/checkout@v2
-        with:
-          repository: "bakdata/ci-templates"
-          path: "ci-templates"
-      
-      - name: Release charts
-        uses: ./ci-templates/helm-release
-        with:
-          githubToken: "${{ secrets.GH_TOKEN }}"
-          githubUsername: "${{ secrets.GH_USERNAME }}"
-          githubEmail: "${{ secrets.GH_EMAIL }}"
-          releaseType: "${{ github.event.inputs.releaseType }}"
+  call-workflow-passing-data:
+    uses: bakdata/ci-templates/.github/workflows/helm-release.yaml@feature/helm-release-workflow
+    with:
+      release-type: "${{ github.event.inputs.release-type }}"
+    secrets:
+      github-email: "${{ secrets.GH_EMAIL }}"
+      github-username: "${{ secrets.GH_USERNAME }}"
+      github-token: "${{ secrets.GH_TOKEN }}"
