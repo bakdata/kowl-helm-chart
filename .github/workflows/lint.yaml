@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Lint helm charts
-        uses: bakdata/ci-templates/actions/helm-lint@feature/helm-release-workflow
+        uses: bakdata/ci-templates/actions/helm-lint@v1.0.0

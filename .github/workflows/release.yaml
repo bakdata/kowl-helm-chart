@@ -10,7 +10,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    uses: bakdata/ci-templates/.github/workflows/helm-release.yaml@feature/helm-release-workflow
+    uses: bakdata/ci-templates/.github/workflows/helm-release.yaml@v1.0.0
     with:
       release-type: "${{ github.event.inputs.release-type }}"
     secrets:
